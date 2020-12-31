@@ -1,23 +1,26 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Head from "next/head";
+import Header from "@components/Header";
+import Footer from "@components/Footer";
+import SidebarMenu from "@components/sidebar";
+
+import { Container, Row, Col } from "react-bootstrap";
 
 export default function Home() {
   return (
-    <div className="container">
+    <main className="main-container">
       <Head>
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-      </main>
-
-      <Footer />
-    </div>
-  )
+      <Container fluid className="home-container">
+        <Container className="">
+          <div className="brandstamp">
+            <h1>IANJOSEF</h1>
+            <h1>PORTFOLIO</h1>
+          </div>
+        </Container>
+      </Container>
+    </main>
+  );
 }
