@@ -11,7 +11,7 @@ body {
 // TYPOGRAPHY
 
 @import url("https://fonts.googleapis.com/css?family=Abel:400|Bowlby+One:400");
-@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Abel:400|Lalezar:400");
 
 html {
@@ -70,20 +70,44 @@ small,
 
 .home-container {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../public/images/home-bg.jpg) no-repeat center;
-  background-size: cover;
+  background: linear-gradient(
+      0deg,
+      rgba(47, 72, 88, 0.95) 25%,
+      rgba(52, 49, 45, 0.95) 95%
+    ),
+    url(../public/images/noise.gif);
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 
   .brandstamp {
+    position: relative;
+    z-index: 2;
+
     h1 {
-      font-family: "Anton", sans-serif;
-      font-size: 100px;
+      font-family: "Archivo Black", sans-serif;
       color: #fff;
       letter-spacing: 5px;
+
+      @media (min-width: 768px) {
+        font-size: 90px;
+      }
+
+      span {
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff;
+      }
     }
+  }
+
+  div#particles-js {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
   }
 }
