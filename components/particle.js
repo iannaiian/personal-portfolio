@@ -7,7 +7,7 @@ export default function ParticleBg() {
       params={{
         particles: {
           number: {
-            value: 19,
+            value: 15,
             density: {
               enable: true,
               value_area: 800,
@@ -20,7 +20,7 @@ export default function ParticleBg() {
             type: "circle",
             stroke: {
               width: 0,
-              color: "#000000",
+              color: "#ffffff",
             },
             polygon: {
               nb_sides: 5,
@@ -52,15 +52,15 @@ export default function ParticleBg() {
             },
           },
           line_linked: {
-            enable: false,
-            distance: 150,
-            color: "#ffffff",
+            enable: true,
+            distance: 50,
+            color: "#ccc",
             opacity: 0.4,
             width: 1,
           },
           move: {
             enable: true,
-            speed: 2,
+            speed: `1`,
             direction: "none",
             random: false,
             straight: false,

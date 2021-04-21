@@ -1,3 +1,10 @@
+import Link from "next/link";
+import { Container, Row, Col } from "react-bootstrap";
+
 export default function Header({ title }) {
-  return <h1 className="title">{title}</h1>
+  return (
+    <main>
+      <Container></Container>
+    </main>
+  );
 }

@@ -1,10 +1,8 @@
-import Head from "next/head";
-import Header from "@components/Header";
-import Footer from "@components/Footer";
-import SidebarMenu from "@components/sidebar";
+import { Container, Row, Col } from "react-bootstrap";
 import ParticlesBg from "@components/particle";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 let easing = [0.6, 0.23, 0.13, 0.99];
 
@@ -22,9 +20,7 @@ const fadeIn = {
   },
 };
 
-import { Container, Row, Col } from "react-bootstrap";
-
-export default function Home() {
+export default function Portfolio() {
   return (
     <motion.div
       initial="initial"
@@ -39,13 +35,13 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <Container fluid className="home-container">
+        <Container fluid className="portfolio">
           <ParticlesBg />
           <Container>
             <div className="brandstamp">
               <div className="d-flex align-items-center">
-                <h6>FRONT-END WEB DEVELOPER</h6>
-                <div className="line-div ml-5" />
+                <h6 style={{ opacity: "0" }}>FRONT-END WEB DEVELOPER</h6>
+                <div className="line-div ml-5" style={{ opacity: "0" }} />
               </div>
               <h1>
                 IAN<span>PORT</span>
@@ -53,12 +49,17 @@ export default function Home() {
               <h1>
                 JOSEF<span>FOLIO</span>
               </h1>
-              <Link href="/portfolio">
+              <Link href="/">
                 <a className="text-white">PORTFOLIO </a>
               </Link>
             </div>
           </Container>
         </Container>
+        <Container
+          fluid
+          className="page-content"
+          style={{ padding: "100px 0", background: "#ffffff" }}
+        ></Container>
       </main>
     </motion.div>
   );
