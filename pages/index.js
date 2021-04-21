@@ -36,7 +36,7 @@ export default function Home() {
         <Head>
           <title>Next.js Starter!</title>
           <meta name="description" content="This is a test" />
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/images/logo-white.png" />
         </Head>
 
         <Container fluid className="home-container">
