@@ -18,7 +18,12 @@ const Header = () => (
               <div className="header-logo">
                 <Link href="/">
                   <a>
-                    <Image src="/images/logo.png" width={80} height={80} />
+                    {/* <Image
+                      src="/images/logo.png"
+                      width={80}
+                      height={80}
+                      layout="responsive"
+                    /> */}
                   </a>
                 </Link>
               </div>
