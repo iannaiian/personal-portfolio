@@ -3,6 +3,10 @@ import Image from "next/image";
 import Sticky from "react-sticky-el";
 import styl from "./header.module.css";
 
+const myLoader = ({ src }) => {
+  return `/images/${src}`;
+};
+
 const Header = () => (
   <header className={`header ${styl.header}`}>
     <Sticky
@@ -18,7 +22,12 @@ const Header = () => (
               <div className="header-logo">
                 <Link href="/">
                   <a>
-                    <Image src="/images/logo.png" width={80} height={80} />
+                    <Image
+                      loader={myLoader}
+                      src={`logo.png`}
+                      width={80}
+                      height={80}
+                    />
                   </a>
                 </Link>
               </div>
