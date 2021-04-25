@@ -1,10 +1,12 @@
 import Head from "next/head";
-import Header from "@components/Header";
 import Footer from "@components/Footer";
 import SidebarMenu from "@components/sidebar";
 import ParticlesBg from "@components/particle";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Header from "@components/header/Header";
+import Image from "next/image";
+import Layout from "@components/layout";
 
 let easing = [0.6, 0.23, 0.13, 0.99];
 
@@ -32,34 +34,36 @@ export default function Home() {
       exit={{ opacity: 0 }}
       variants={fadeIn}
     >
-      <main className="main-container">
-        <Head>
-          <title>Next.js Starter!</title>
-          <meta name="description" content="This is a test" />
-          <link rel="icon" href="/images/logo-white.png" />
-        </Head>
-
-        <Container fluid className="home-container">
-          <ParticlesBg />
-          <Container>
-            <div className="brandstamp">
-              <div className="d-flex align-items-center">
-                <h6>FRONT-END WEB DEVELOPER</h6>
-                <div className="line-div ml-5" />
+      {" "}
+      <Head>
+        <title>Next.js Starter!</title>
+        <meta name="description" content="This is a test" />
+      </Head>{" "}
+      <Layout>
+        <main className="main-container">
+          <Container fluid className="home-container">
+            <ParticlesBg />
+            <Container>
+              <div className="brandstamp">
+                <div className="d-flex align-items-center">
+                  <h6>FRONT-END WEB DEVELOPER</h6>
+                </div>
+                <h1>
+                  IAN<span>PORT</span>
+                </h1>
+                <h1>
+                  JOSEF<span>FOLIO</span>
+                </h1>
               </div>
-              <h1>
-                IAN<span>PORT</span>
-              </h1>
-              <h1>
-                JOSEF<span>FOLIO</span>
-              </h1>
-              <Link href="/portfolio">
-                <a className="text-white">PORTFOLIO </a>
-              </Link>
-            </div>
+            </Container>
           </Container>
-        </Container>
-      </main>
+          <Container
+            fluid
+            className="page-content"
+            style={{ padding: "100px 0", background: "#ffffff" }}
+          ></Container>
+        </main>
+      </Layout>
     </motion.div>
   );
 }

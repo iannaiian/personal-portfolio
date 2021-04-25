@@ -1,0 +1,23 @@
+.sticky-wrapper {
+  transform: unset !important;
+}
+
+.is-sticky .header {
+  background: #181a21;
+  z-index: 9999999;
+}
+
+.is-sticky .menu-container {
+  padding: 0.5rem 0;
+}
+
+.menu-container {
+  padding: 1rem 0;
+  transition: padding 400ms ease-in-out;
+}
+
+@media (min-width: 1366px) and (max-height: 1024px) {
+  .header .nav-bar {
+    display: none;
+  }
+}

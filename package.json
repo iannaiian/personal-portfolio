@@ -17,6 +17,8 @@
     "react-dom": "17.0.1",
     "react-particles-js": "^3.4.1",
     "react-sidebar": "^3.0.2",
+    "react-sticky-el": "^1.0.20",
     "sass": "^1.32.0"
-  }
+  },
+  "devDependencies": {}
 }

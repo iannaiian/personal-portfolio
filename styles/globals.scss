@@ -11,8 +11,8 @@ body {
 // TYPOGRAPHY
 
 @import url("https://fonts.googleapis.com/css?family=Abel:400|Bowlby+One:400");
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Abel:400|Lalezar:400");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
 html {
   font-size: 100%;
@@ -58,14 +58,14 @@ h3,
 h4,
 h5 {
   margin: 3rem 0 1.38rem;
-  font-family: "Lalezar", sans-serif;
+  font-family: "Anton", sans-serif;
   font-weight: 400;
   line-height: 0.9 !important;
 }
 
-h6 {
-  font-family: "Abel", sans-serif;
-}
+// h6 {
+//   font-family: "Abel", sans-serif;
+// }
 
 h1 {
   margin-top: 0;
@@ -100,6 +100,39 @@ p {
 
 // TYPOGRAPHY
 
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 9999999;
+
+  a {
+    color: #fff;
+    transition: 0.5s;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 3px;
+
+    &:hover {
+      text-decoration: none;
+      opacity: 0.7;
+      color: #fff;
+    }
+  }
+
+  .header-normal {
+    padding: 20px 0;
+    transition: 0.5s;
+  }
+
+  .sticky-header {
+    background: #fff;
+    padding: 0 !important;
+
+    a {
+      color: #ccc;
+    }
+  }
+}
+
 .home-container {
   position: relative;
   height: 100vh;
@@ -113,12 +146,11 @@ p {
     z-index: 2;
 
     h1 {
-      font-family: "Archivo Black", sans-serif;
       color: #fff;
       letter-spacing: 5px;
 
       @media (min-width: 768px) {
-        font-size: 120px;
+        font-size: 100px;
       }
 
       span {
@@ -166,7 +198,6 @@ p {
     z-index: 2;
 
     h1 {
-      font-family: "Archivo Black", sans-serif;
       color: #fff;
       letter-spacing: 5px;
       color: transparent;
@@ -174,7 +205,7 @@ p {
       -webkit-text-stroke-color: #fff;
 
       @media (min-width: 768px) {
-        font-size: 120px;
+        font-size: 100px;
       }
 
       span {
