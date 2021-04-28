@@ -24,9 +24,9 @@ const Header = () => (
                   <a>
                     <Image
                       loader={myLoader}
-                      src={`logo.png`}
-                      width={80}
-                      height={80}
+                      src={`logo.svg`}
+                      width={200}
+                      height={50}
                     />
                   </a>
                 </Link>
