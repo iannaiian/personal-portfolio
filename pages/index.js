@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import Header from "@components/header/Header";
 import Image from "next/image";
 import Layout from "@components/layout";
+import ScrollAnimation from "@components/scroll";
 
 let easing = [0.6, 0.23, 0.13, 0.99];
 
@@ -57,11 +58,11 @@ export default function Home() {
               </div>
             </Container>
           </Container>
-          <Container
+          {/* <Container
             fluid
             className="page-content"
             style={{ padding: "100px 0", background: "#ffffff" }}
-          ></Container>
+          ></Container> */}
         </main>
       </Layout>
     </motion.div>

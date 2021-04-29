@@ -37,7 +37,7 @@ const Header = () => (
                 <div className="nav-bar">
                   {" "}
                   <Link href="/portfolio/">
-                    <a>PORTFOLIO</a>
+                    <a>WORKS</a>
                   </Link>
                 </div>
               </div>

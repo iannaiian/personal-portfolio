@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Layout from "@components/layout";
+import ScrollAnimation from "@components/scroll";
 
 let easing = [0.6, 0.23, 0.13, 0.99];
 
@@ -51,6 +52,7 @@ export default function Portfolio() {
                 </h1>
               </div>
             </Container>
+            <ScrollAnimation />
           </Container>
           <Container
             fluid
