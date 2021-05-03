@@ -57,12 +57,13 @@ export default function Home() {
                 </h1>
               </div>
             </Container>
+            <ScrollAnimation />
           </Container>
-          {/* <Container
+          <Container
             fluid
             className="page-content"
             style={{ padding: "100px 0", background: "#ffffff" }}
-          ></Container> */}
+          ></Container>
         </main>
       </Layout>
     </motion.div>

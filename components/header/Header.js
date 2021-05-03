@@ -24,9 +24,9 @@ const Header = () => (
                   <a>
                     <Image
                       loader={myLoader}
-                      src={`logo.svg`}
-                      width={200}
-                      height={50}
+                      src={`logo-icon.svg`}
+                      width={50}
+                      height={90}
                     />
                   </a>
                 </Link>
@@ -34,10 +34,13 @@ const Header = () => (
             </div>
             <div className="col-9">
               <div className="text-right d-flex justify-content-end">
-                <div className="nav-bar">
+                <div className="nav-bar d-flex justify-content-between">
                   {" "}
+                  <Link href="/">
+                    <a className="px-3">HOME</a>
+                  </Link>
                   <Link href="/portfolio/">
-                    <a>WORKS</a>
+                    <a className="px-3">WORKS</a>
                   </Link>
                 </div>
               </div>

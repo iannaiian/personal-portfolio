@@ -1,10 +1,18 @@
+import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ParticlesBg from "@components/particle";
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Layout from "@components/layout";
 import ScrollAnimation from "@components/scroll";
+import data from "@components/data";
+import Button from "@components/button";
+
+const myLoader = ({ src }) => {
+  return `/images/sites${src}`;
+};
 
 let easing = [0.6, 0.23, 0.13, 0.99];
 
@@ -23,6 +31,23 @@ const fadeIn = {
 };
 
 export default function Portfolio() {
+  const allData = ["All", ...new Set(data.map((datas) => datas.cat))];
+  console.log(allData);
+
+  const [dataItems, setDataItems] = useState(data);
+  const [buttons, setButtons] = useState(allData);
+  console.log(data);
+
+  const filter = (button) => {
+    if (button === "All") {
+      setDataItems(data);
+      return;
+    }
+
+    const filteredData = data.filter((datas) => datas.cat === button);
+    setDataItems(filteredData);
+  };
+
   return (
     <motion.div
       initial="initial"
@@ -58,7 +83,34 @@ export default function Portfolio() {
             fluid
             className="page-content"
             style={{ padding: "100px 0", background: "#ffffff" }}
-          ></Container>
+          >
+            <Container>
+              <Button button={buttons} filter={filter} />
+              <Row>
+                {dataItems.map((items) => {
+                  return (
+                    <Col lg="6" key={items.id}>
+                      <div className="works-container my-3">
+                        <div className="img-box">
+                          <div className="img-box-inner">
+                            <Image
+                              loader={myLoader}
+                              src={`/${items.img}`}
+                              width={1920}
+                              height={1277}
+                            />
+                          </div>{" "}
+                        </div>
+
+                        <h1 className="mt-3">{items.title}</h1>
+                        <p>{items.desc}</p>
+                      </div>
+                    </Col>
+                  );
+                })}
+              </Row>
+            </Container>
+          </Container>
         </main>
       </Layout>
     </motion.div>
