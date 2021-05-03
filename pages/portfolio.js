@@ -56,7 +56,7 @@ export default function Portfolio() {
       variants={fadeIn}
     >
       <Head>
-        <title>Next.js Starter!</title>
+        <title>Portfolio | Ian Josef Web Design</title>
         <meta name="description" content="This is a test" />
       </Head>
 

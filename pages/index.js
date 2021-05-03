@@ -37,7 +37,7 @@ export default function Home() {
     >
       {" "}
       <Head>
-        <title>Next.js Starter!</title>
+        <title>Ian Josef Web Design & Development</title>
         <meta name="description" content="This is a test" />
       </Head>{" "}
       <Layout>
