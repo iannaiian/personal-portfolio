@@ -1,10 +1,10 @@
 export default [
   {
     id: 1,
-    img: "site1.jpg",
-    title: "Business Optimized",
-    desc: "Helping Business Owners Finally Achieve What They Set Out To Do",
-    cat: "Design & Development",
+    img: "site7.jpg",
+    title: "NEWtritionIQ",
+    desc: "Introducing a New Health Paradigm",
+    cat: "Design",
   },
   {
     id: 2,
@@ -43,11 +43,12 @@ export default [
     desc: "30 Years Of Matchmaking Experience",
     cat: "Design & Development",
   },
+
   {
     id: 7,
-    img: "site7.jpg",
-    title: "NEWtritionIQ",
-    desc: "Introducing a New Health Paradigm",
-    cat: "Design",
+    img: "site1.jpg",
+    title: "Business Optimized",
+    desc: "Helping Business Owners Finally Achieve What They Set Out To Do",
+    cat: "Design & Development",
   },
 ];

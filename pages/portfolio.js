@@ -78,6 +78,10 @@ export default function Portfolio() {
               </div>
             </Container>
             <ScrollAnimation />
+            <div className="main-pic">
+              {" "}
+              <Image src="/images/main-pic.jpg" width={530} height={530} />
+            </div>
           </Container>
           <Container
             fluid
@@ -91,7 +95,7 @@ export default function Portfolio() {
                   return (
                     <Col lg="6" key={items.id}>
                       <div className="works-container my-3">
-                        <div className="img-box">
+                        <div className="img-box d-flex justify-content-center align-items-center">
                           <div className="img-box-inner">
                             <Image
                               loader={myLoader}
