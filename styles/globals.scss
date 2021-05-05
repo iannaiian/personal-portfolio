@@ -102,6 +102,54 @@ h5 {
   font-size: 1.25rem;
 }
 
+.btn {
+  position: relative;
+  background-color: transparent !important;
+  color: #2e4057 !important;
+  padding: 20px 40px !important;
+  border-radius: 0 !important;
+  transition: 0.3s !important;
+  transition-timing-function: ease-in !important;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #2e4057;
+    top: -5px;
+    left: -5px;
+    transition: 0.3s;
+    transition-timing-function: ease-in;
+  }
+
+  &:hover {
+    background-color: #2e4057 !important;
+    color: #fff !important;
+
+    &:before {
+      top: 0;
+      left: 0;
+    }
+    &:after {
+      bottom: 0 !important;
+      right: 0 !important;
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #2e4057;
+    bottom: -5px;
+    right: -5px;
+    transition: 0.3s;
+    transition-timing-function: ease-in;
+  }
+}
+
 .heading {
   color: #2e4057;
   font-size: 45px;
@@ -393,12 +441,13 @@ p {
 //   }
 // }
 
-.btn {
+.btn-filter {
   background-color: #1b9aaa !important;
   padding: 10px 35px !important;
   margin: 10px;
   color: #fff !important;
   transition: 0.3s !important;
+  border: none;
 
   &:focus {
     background-color: #2e4057 !important;

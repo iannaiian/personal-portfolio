@@ -103,27 +103,30 @@ export default function Home() {
                     className="d-flex justify-content-center align-items-center"
                   >
                     <div className="my-3">
-                      <h2>Business Optimized</h2>
+                      <h2>NEWtritionIQ</h2>
                       <p
                         className="mb-4"
                         style={{ fontSize: "20px", fontWeight: "bold" }}
                       >
-                        Helping Business Owners Finally Achieve What They Set
-                        Out To Do
+                        Introducing a New Health Paradigm
                       </p>
 
-                      <p>
-                        BUSINESS OPTIMIZED is a complimentary educational
-                        program powered by the nation's most experienced
-                        financial professionals and tax strategies committed to
-                        helping entrepreneurs finally achieve what they set out
-                        to do when they started their business. Our elite
-                        network is made up of the nation's leading financial
-                        professionals and tax strategists. As business owners
-                        ourselves, we've dug through countless pages of tax code
-                        and a myriad of planning strategies to offer
-                        breakthrough solutions for the real world.
+                      <p className="mb-5">
+                        Created by nutrition experts, AI/ML specialists and rich
+                        data scientists Nutrient Quotient (NQ) is a science
+                        based methodology specifically developed to create a new
+                        nutrition calibration model that most accurately tracks
+                        consumers’ complete nutrition consumption.
                       </p>
+                      <a
+                        href="https://www.figma.com/proto/yX8Va1TtJdoAleODSDNyON/NEWtitionIQ-Copy?node-id=2%3A2&scaling=scale-down-width"
+                        target="_blank"
+                        title="NEWtritionIQ"
+                        rel="noreferrer noopener"
+                        className="btn"
+                      >
+                        Check out the Mockup
+                      </a>
                     </div>
 
                     {/* <h1 className="mt-3">{items.title}</h1>
@@ -147,7 +150,7 @@ export default function Home() {
                         Analytical Laboratory Colorado Owned & Operated
                       </p>
 
-                      <p>
+                      <p className="mb-5">
                         Bona Fides is ISO/IEC 17025:2005 accredited for the
                         analysis of potency, pesticides and residual solvents.
                         An accredited laboratory provides Defensible (data can
@@ -155,6 +158,15 @@ export default function Home() {
                         traced to proper methods and standards) Repeatable
                         (methods can be repeated to obtain the same result).
                       </p>
+                      <a
+                        href="https://bonafideslab-6lw.netlify.app/"
+                        target="_blank"
+                        title="Bona Fides Laboratory, Inc."
+                        rel="noreferrer noopener"
+                        className="btn"
+                      >
+                        Go to Website
+                      </a>
                     </div>
 
                     {/* <h1 className="mt-3">{items.title}</h1>
@@ -209,7 +221,7 @@ export default function Home() {
                         FREE equipment.
                       </p>
 
-                      <p>
+                      <p className="mb-5">
                         Phone Service USA provides new and innovative solutions
                         to satisfy all the VoIP phone service your business
                         requires. We are a leading team of world-class
@@ -219,6 +231,15 @@ export default function Home() {
                         features that Fortune 500 companies have been utilizing
                         for years even when your budget is limited.
                       </p>
+                      <a
+                        href="https://phoneserviceusa.netlify.app/"
+                        target="_blank"
+                        title="Phone Service USA"
+                        rel="noreferrer noopener"
+                        className="btn"
+                      >
+                        Go to Website
+                      </a>
                     </div>
 
                     {/* <h1 className="mt-3">{items.title}</h1>

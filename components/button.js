@@ -6,7 +6,7 @@ export default function Buttons({ button, filter }) {
           <button
             key={i}
             type="button"
-            className="btn"
+            className="btn-filter"
             onClick={() => filter(cat)}
           >
             {cat}
