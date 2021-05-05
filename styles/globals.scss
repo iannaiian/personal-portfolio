@@ -111,6 +111,11 @@ h5 {
   transition: 0.3s !important;
   transition-timing-function: ease-in !important;
 
+  &:focus {
+    outline: 0;
+    box-shadow: none !important;
+  }
+
   &:before {
     content: "";
     position: absolute;
