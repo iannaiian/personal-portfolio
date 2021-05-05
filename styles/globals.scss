@@ -209,7 +209,7 @@ p {
   }
 
   .header-normal {
-    padding: 20px 0;
+    padding: 10px 0;
     transition: 0.5s;
   }
 
@@ -221,6 +221,11 @@ p {
       color: #2e4057;
     }
   }
+}
+
+.border-padding-left{
+  padding-left: 20px;
+  border-left: 1px solid #ccc;
 }
 
 .home-container {
@@ -294,6 +299,7 @@ p {
       top: 0;
       left: 0;
       z-index: 2;
+      transition: 0.3s;
     }
   }
 }

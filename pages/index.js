@@ -111,7 +111,7 @@ export default function Home() {
                         Introducing a New Health Paradigm
                       </p>
 
-                      <p className="mb-5">
+                      <p className="mb-5 border-padding-left">
                         Created by nutrition experts, AI/ML specialists and rich
                         data scientists Nutrient Quotient (NQ) is a science
                         based methodology specifically developed to create a new
@@ -150,7 +150,7 @@ export default function Home() {
                         Analytical Laboratory Colorado Owned & Operated
                       </p>
 
-                      <p className="mb-5">
+                      <p className="mb-5 border-padding-left">
                         Bona Fides is ISO/IEC 17025:2005 accredited for the
                         analysis of potency, pesticides and residual solvents.
                         An accredited laboratory provides Defensible (data can
@@ -221,7 +221,7 @@ export default function Home() {
                         FREE equipment.
                       </p>
 
-                      <p className="mb-5">
+                      <p className="mb-5 border-padding-left">
                         Phone Service USA provides new and innovative solutions
                         to satisfy all the VoIP phone service your business
                         requires. We are a leading team of world-class
